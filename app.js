@@ -159,3 +159,173 @@ document.write("Value: " + value);
 document.write("<br>");
 
 document.write("Type: " + typeof value);
+
+
+// Task 10
+
+
+document.write("<h2>Task 10</h2>");
+
+var userInput = 'peanuts'
+
+document.write("User input: " + userInput);
+
+userInput = userInput.toUpperCase();
+
+document.write("<br>");
+
+document.write("Upper case: " + userInput);
+
+
+// Task 11
+
+
+document.write("<h2>Task 11</h2>");
+
+var userInput = 'javascript';
+
+document.write("User input: " + userInput);
+
+userInput = userInput[0].toUpperCase() + userInput.slice(1);
+
+document.write("<br>");
+
+document.write("Title case: " + userInput);
+
+
+// Task 12
+
+
+document.write("<h2>Task 12</h2>");
+
+var num = 35.36
+
+document.write("Number: " + num);
+
+num = num * 100;
+
+document.write("<br>");
+
+document.write("Number: " + num);
+
+
+// Task 13
+
+
+document.write("<h2>Task 13</h2>");
+
+username = '!';
+
+document.write('ASCII code of ' + username + ' is '+ username.charCodeAt());
+
+document.write("<br>");
+
+
+username = ',';
+
+document.write('ASCII code of ' + username + ' is '+ username.charCodeAt());
+
+document.write("<br>");
+
+
+username = '.';
+
+document.write('ASCII code of ' + username + ' is '+ username.charCodeAt());
+
+document.write("<br>");
+
+
+username = '@';
+
+document.write('ASCII code of ' + username + ' is '+ username.charCodeAt());
+
+document.write("<br>");
+
+
+
+// Task 14
+
+
+document.write("<h2>Task 14</h2>");
+
+var A = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+
+loc = -1;
+
+var searchByUserInput = 'apple pie'.toLowerCase()
+
+for (let i = 0; i < A.length; i++) {
+
+    if (A[i] == searchByUserInput) {
+
+        loc = i
+        break
+
+    }     
+}
+
+if (loc > -1) {
+
+    document.write(searchByUserInput + " is availabe at index " + loc + "in our bakery");
+
+} 
+else {
+
+    document.write("We are sorry. " + searchByUserInput + " is not available in our bakery");
+    
+}
+
+
+// Task 15
+
+
+document.write("<h2>Task 15</h2>");
+
+
+const letter = 'ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz';
+
+const number = '0123456789';
+
+const specialChars = '!@#$%^&*()_+';
+
+var passwordLen = 12;
+
+var password = '';
+
+password += letter.charAt(Math.floor(Math.random() * letter.length))
+
+for (let i = 1; i < passwordLen; i++) {
+
+    const charType = Math.floor(Math.random() * 3);
+
+
+    if (charType === 0) {
+        password += letter.charAt(Math.floor(Math.random() * letter.length))
+    } else if (charType === 1) {
+        password += number.charAt(Math.floor(Math.random() * number.length))
+    } else {
+        password += specialChars.charAt(Math.floor(Math.random() * specialChars.length))
+    }
+    
+}
+
+
+document.write(password)
+
+// Task 16
+
+
+document.write("<h2>Task 16</h2>");
+
+var university = "University of Karachi";
+
+for (let i = 0; i < university.length; i++) {
+
+    document.write(university[i] + "<br>");
+
+}
+       
+
+// Task 17
+
+document.write("<h2>Task 17</h2>");
